@@ -1,0 +1,56 @@
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "files": {
+        "ignoreUnknown": false
+    },
+    "formatter": {
+        "enabled": true,
+        "formatWithErrors": false,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineEnding": "lf",
+        "lineWidth": 320,
+        "attributePosition": "auto",
+        "bracketSpacing": false,
+        "expand": "auto",
+        "useEditorconfig": true
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "style": {
+                "noNonNullAssertion": "off"
+            },
+            "suspicious": {
+                "noExplicitAny": "info"
+            }
+        }
+    },
+    "javascript": {
+        "experimentalEmbeddedSnippetsEnabled": true,
+        "formatter": {
+            "enabled": false
+        }
+    },
+    "css": {
+        "formatter": {
+            "quoteStyle": "single"
+        }
+    },
+    "graphql": {
+        "formatter": {
+            "quoteStyle": "single"
+        }
+    },
+    "html": {
+        "experimentalFullSupportEnabled": true,
+        "formatter": {
+            "enabled": true,
+            "indentScriptAndStyle": true
+        }
+    },
+    "assist": {
+        "enabled": false
+    }
+}
