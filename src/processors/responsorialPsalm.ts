@@ -6,7 +6,7 @@ const responsorialPsalm: Processor = rawSection => {
     const replaced = rawSection.map(line => (line
         .replace(/^(領|【答】)：/, ''))
         .replace(/【答】$/, ''));
-    const answer = replaced.pop()!;
+    const answer = replaced.shift()!;
     const result: Line[] = [{
         role: Role.Faithful,
         text: answer,
